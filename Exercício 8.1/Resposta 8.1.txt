@@ -1,0 +1,26 @@
+Exercício 8.1 Considerado o código a seguir, preencha corretamente checklist abaixo e apresente um parecer dizendo se o código 
+segue ou não 100% os princípios de programção funcional.
+
+(X) A função não depende de nenhum dado externo;
+A função somaQuadrados recebe o array arr como parâmetro, que é passado como argumento externo. No entanto, ela não depende de 
+nenhum dado externo além desse parâmetro.
+
+(X) As funções se comportam sem estados (stateless).
+A função somaQuadrados não mantém nenhum estado interno. Ela simplesmente calcula a soma dos quadrados dos elementos do 
+array de entrada e retorna o resultado.
+
+(X) A função não provoca nenhum efeito secundário.
+A função somaQuadrados não provoca nenhum efeito colateral. Ela apenas realiza cálculos e retorna um valor.
+
+( ) Não existe nenhuma estrutura de repetição.
+O código utiliza um loop for na função somaQuadrados para iterar sobre os elementos do array e calcular a soma dos quadrados. 
+Portanto, existe uma estrutura de repetição no código.
+
+(X) Estruturas condicionais não existem, ou se existem estruturas condicionais, elas não poderiam ter sido evitadas.
+O código não contém estruturas condicionais. O cálculo é realizado de forma direta, sem necessidade de condições.
+
+(X) Todos os dados seguem o conceito de imutabilidade – nenhum dado é modificado depois de ter sido criado.
+O código não modifica nenhum dado após sua criação. Os elementos do array arr não são alterados dentro da função somaQuadrados.
+
+Portanto, o código segue a maioria dos princípios da programação funcional, mas não atende ao critério de ausência de estruturas de 
+repetição.

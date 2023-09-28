@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercício 9.4</title>
+
+    <script>
+        fetch('https://restcountries.com/v3.1/all')
+        .then((response) => response.json())
+        .then((data) => {
+            // Filtrar os países que não são independentes e estão na Ásia
+            const paisesFiltrados = data.filter(
+            (pais) => pais.independent === false && pais.region === 'Asia'
+            );
+
+            // Imprimir os dados dos quatro primeiros países do resultado
+            for (let i = 0; i < 4 && i < paisesFiltrados.length; i++) {
+            const pais = paisesFiltrados[i];
+            console.log(`Nome: ${pais.name.common}`);
+            console.log(`Capital: ${pais.capital}`);
+            console.log(`População: ${pais.population}`);
+            console.log('---');
+            }
+        })
+        .catch((error) => {
+            console.error('Ocorreu um erro ao buscar os dados dos países:', error);
+        });
+
+    </script>
+
+</head>
+
+<body> </body>
+
+</html>

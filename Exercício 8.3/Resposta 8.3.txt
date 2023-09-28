@@ -1,0 +1,18 @@
+Considerando a função recursiva apresentada a seguir(que realiza uma busca linear em uma lista de elementos), identifique o(s) 
+caso(s) base e achamada recursiva. Observe que essa função possui dois casos base, ou seja duas condiçõesde parada.
+
+Casos Base:
+
+Caso Base 1 (index === lista.length):
+    Ele verifica se o índice index é igual ao comprimento da lista lista. Se for igual, significa que a função percorreu toda a 
+    lista sem encontrar o elemento desejado, e ela retorna -1 para indicar que o elemento não foi encontrado.
+
+Caso Base 2 (lista[index] === elemento):
+    Este é o segundo caso base. Ele verifica se o elemento na posição index da lista lista é igual ao elemento que estamos 
+    procurando (elemento). Se for igual, a função retorna o valor de index, que representa a posição do elemento encontrado na lista.
+
+
+Chamada Recursiva:
+    A chamada recursiva ocorre na cláusula else do código. Se nenhum dos casos base for satisfeito (ou seja, o elemento não foi 
+    encontrado até o momento), a função chama a si mesma com os mesmos parâmetros, exceto pelo incremento de index em 1. 
+    Isso permite que a função continue a busca pelo elemento na próxima posição da lista.

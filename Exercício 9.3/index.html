@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercício 9.3</title>
+
+    <script>
+        function dividirPorDoisEcalcularSoma(vetor) {
+        // Dividir todos os números do vetor por dois
+        const numerosDivididos = vetor.map((numero) => numero / 2);
+
+        // Calcular a soma dos números resultantes
+        const soma = numerosDivididos.reduce((acumulador, numero) => acumulador + numero, 0);
+
+        return soma;
+        }
+
+        const vetorDesordenado = [3, 6, 9, 12];
+        const resultado = dividirPorDoisEcalcularSoma(vetorDesordenado);
+
+        console.log(`A soma dos números divididos por dois é: ${resultado}`);
+    </script>
+
+</head>
+
+<body> </body>
+
+</html>

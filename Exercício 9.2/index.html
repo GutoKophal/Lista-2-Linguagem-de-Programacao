@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercício 9.2</title>
+
+    <script>
+        function ordenarNumerosPositivos(vetor) {
+        // Filtra os números maiores que zero
+        const numerosPositivos = vetor.filter((numero) => numero <= 0);
+
+        // Ordena o vetor resultante em ordem crescente
+        const vetorOrdenado = numerosPositivos.sort((a, b) => a - b);
+
+        return vetorOrdenado;
+        }
+
+        const vetorDesordenado = [3, -2, 5, 0, -1, 4];
+        const vetorOrdenadoSemPositivos = ordenarNumerosPositivos(vetorDesordenado);
+
+        console.log(vetorOrdenadoSemPositivos);
+    </script>
+
+</head>
+
+<body> </body>
+
+</html>

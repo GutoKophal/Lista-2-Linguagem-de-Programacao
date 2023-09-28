@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercício 10.2</title>
+
+    <script>
+        // Exemplo de array com strings
+        const palavras = ['Olá', 'Mundo', 'do', 'JavaScript'];
+
+        // Função acumuladora que concatena duas strings
+        const concatenar = (a, b) => a + ' ' + b;
+
+        // Usando reduce() para concatenar da esquerda para a direita
+        const resultadoReduce = palavras.reduce(concatenar);
+        console.log('Usando reduce():', resultadoReduce);
+
+        // Usando reduceRight() para concatenar da direita para a esquerda
+        const resultadoReduceRight = palavras.reduceRight(concatenar);
+        console.log('Usando reduceRight():', resultadoReduceRight);
+    </script>
+
+</head>
+
+<body> </body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercício 10.1,1</title>
+
+    <script>
+
+        function obterAlunos() {
+        return [
+            {
+            nome: 'Antonino ',
+            nota1: 10,
+            nota2: 8,
+            },
+            {
+            nome: 'Bruno ',
+            nota1: 8,
+            nota2: 8,
+            },
+            {
+            nome: 'Bruno ',
+            nota1: 4,
+            nota2: 4,
+            },
+            {
+            nome: 'Bruno ',
+            nota1: 6,
+            nota2: 4,
+            },
+        ];
+        }
+
+        // Função para calcular a média das notas de um aluno
+        function calcularMediaAluno(aluno) {
+        return (aluno.nota1 + aluno.nota2) / 2;
+        }
+
+        // Obtém a lista de alunos
+        const listaDeAlunos = obterAlunos();
+
+        // Filtra os alunos aprovados (nota maior ou igual a 6)
+        const alunosAprovados = listaDeAlunos.filter((aluno) => calcularMediaAluno(aluno) >= 6);
+
+        // Ordena os alunos aprovados pela nota final em ordem decrescente
+        alunosAprovados.sort((a, b) => calcularMediaAluno(b) - calcularMediaAluno(a));
+
+        console.log('Alunos Aprovados:');
+        console.log(alunosAprovados);
+        
+    </script>
+
+</head>
+
+<body> </body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercício 9.1,1</title>
+
+    <script>
+
+        function obterCarros() {
+            return [
+                {
+                marca: 'Toyota ',
+                modelo: 'Corolla ',
+                ano: 2022,
+                cor: 'Prata ',
+                preco: 60000,
+                },
+                {
+                marca: 'Honda ',
+                modelo: 'Civic ',
+                ano: 2023,
+                cor: 'Preto ',
+                preco: 64000,
+                },
+                {
+                marca: 'Ford ',
+                modelo: 'Focus ',
+                ano: 2021,
+                cor: 'Azul ',
+                preco: 50000,
+                },
+                {
+                marca: 'Chevrolet ',
+                modelo: 'Cruze ',
+                ano: 2022,
+                cor: 'Vermelho ',
+                preco: 61000,
+                },
+            ];
+        }
+
+        function filtrarCarrosVermelhosEAzuis(carros) {
+        return carros.filter((carro) => carro.cor === 'Vermelho' || carro.cor === 'Azul');
+        }
+
+        function ordenarCarrosPorAno(carros) {
+        return carros.sort((a, b) => a.ano - b.ano);
+        }
+
+        const listaDeCarros = obterCarros();
+        const carrosFiltrados = filtrarCarrosVermelhosEAzuis(listaDeCarros);
+        const carrosOrdenadosPorAno = ordenarCarrosPorAno(carrosFiltrados);
+
+        console.log(carrosOrdenadosPorAno);
+
+    
+    </script>
+
+</head>
+
+<body> </body>
+
+</html>

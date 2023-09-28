@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercício 9.1,2</title>
+
+    <script>
+
+        function obterCarros() {
+            return [
+                {
+                marca: 'Toyota ',
+                modelo: 'Corolla ',
+                ano: 2022,
+                cor: 'Prata ',
+                preco: 60000,
+                },
+                {
+                marca: 'Honda ',
+                modelo: 'Civic ',
+                ano: 2023,
+                cor: 'Preto ',
+                preco: 64000,
+                },
+                {
+                marca: 'Ford ',
+                modelo: 'Focus ',
+                ano: 2021,
+                cor: 'Azul ',
+                preco: 50000,
+                },
+                {
+                marca: 'Chevrolet ',
+                modelo: 'Cruze ',
+                ano: 2022,
+                cor: 'Vermelho ',
+                preco: 61000,
+                },
+            ];
+        }
+
+        // Função para somar o preço de carros produzidos em 2022 ou antes de 2022
+        function somarPrecosCarrosProduzidosAte2022(carros) {
+            const carrosAte2022 = carros.filter((carro) => carro.ano <= 2022);
+            const precoTotal = carrosAte2022.reduce((total, carro) => total + carro.preco, 0);
+            return precoTotal;
+        }
+
+        const listaDeCarros = obterCarros();
+        const precoTotalCarrosAte2022 = somarPrecosCarrosProduzidosAte2022(listaDeCarros);
+
+        console.log(`O preço total dos carros produzidos em 2022 ou antes de 2022 é: ${precoTotalCarrosAte2022}`);
+
+    
+    </script>
+
+</head>
+
+<body> </body>
+
+</html>

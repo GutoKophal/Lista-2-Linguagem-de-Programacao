@@ -1,0 +1,25 @@
+Considerado o código a seguir, preencha corretamente o checklist abaixo e apresenteum parecer dizendo se o código segue ou não 
+100% os princípios de programção funcional.
+
+(X) A função não depende de nenhum dado externo;
+A função somaQuadradosFuncional recebe o array arr como parâmetro, que é passado como argumento externo. No entanto, 
+ela não depende de nenhum dado externo além desse parâmetro.
+
+(X) As funções se comportam sem estados (stateless).
+A função somaQuadradosFuncional é uma função pura que não mantém estados internos. Ela apenas utiliza os parâmetros de 
+entrada para calcular o resultado.
+
+(X) A função não provoca nenhum efeito secundário.
+A função somaQuadradosFuncional não provoca efeitos colaterais. Ela simplesmente realiza um cálculo e retorna um valor.
+
+(X) Não existe nenhuma estrutura de repetição.
+O código utiliza o método reduce para calcular a soma dos quadrados dos elementos do array. Embora o reduce envolva iterações internas, 
+ele não é uma estrutura de repetição no sentido tradicional de um loop. Portanto, não há estruturas de repetição explícitas no código.
+
+(X) Estruturas condicionais não existem, ou se existem estruturas condicionais, elas não poderiam ter sido evitadas.
+O código não contém estruturas condicionais. O cálculo é realizado de forma direta, sem necessidade de condições.
+
+(X) Todos os dados seguem o conceito de imutabilidade – nenhum dado é modificado depois de ter sido criado.
+O código não modifica nenhum dado após sua criação. Ele utiliza o método reduce de forma imutável para calcular a soma dos quadrados.
+
+Portanto, o código segue todos os princípios da programação funcional, incluindo a ausência de estruturas de repetição e condicionais, e o uso de funções puras para realizar o cálculo.
